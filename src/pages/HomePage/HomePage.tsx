@@ -1,6 +1,7 @@
 import styles from "./HomePage.module.css";
 import { getProducts, Product } from "../../services/api";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 type ProductView = {
   id: number;
@@ -40,7 +41,13 @@ export function HomePage() {
           <div>{product.name} </div>
           <div>{product.description}</div>
           <div>{product.price}</div>
-          <img src={product.image} />
+          <img
+            style={{ width: "180px", height: "180px" }}
+            src={product.image}
+          />
+          <Link to={`/product/${product.id}`}>
+            перейти к товару {product.name}
+          </Link>
         </div>
       ))}
     </div>
