@@ -42,11 +42,11 @@ export function HomePage() {
           <div>{product.description}</div>
           <div>{product.price}</div>
           <img
-            style={{ width: "180px", height: "180px" }}
+            style={{ width: "180px", height: "280px" }}
             src={product.image}
           />
           <Link to={`/product/${product.id}`}>
-            перейти к товару {product.name}
+            <button>перейти к товару {product.name}</button>
           </Link>
         </div>
       ))}
