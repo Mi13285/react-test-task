@@ -7,7 +7,7 @@ type ProductView = {
   id: number;
   name: string;
   description: string;
-  img: string;
+  image: string;
   price: string;
 };
 

@@ -74,7 +74,7 @@ export type Product = (typeof products)[number];
 export type Size = (typeof sizes)[number];
 
 export function getSizes() {
-  return new Promise<Size>((resolve) => {
+  return new Promise<Size[]>((resolve) => {
     setTimeout(() => resolve(sizes), 250);
   });
 }
@@ -85,7 +85,7 @@ export function getProducts() {
   });
 }
 
-export function getProduct(id) {
+export function getProduct(id: number) {
   return new Promise<Product>((resolve, reject) => {
     setTimeout(() => {
       const product = products.find((product) => product.id == id);

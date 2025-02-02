@@ -1,11 +1,11 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Product, Size } from "../../../services/api";
 type ProductCartProps = {
   product: Product;
   sizes: Size[];
 };
 export function ProductCart({
-  product: { colors, id, name },
+  product: { colors, name },
   sizes,
 }: ProductCartProps) {
   const [currentColor, setCurrentColor] = useState<number | null>(
