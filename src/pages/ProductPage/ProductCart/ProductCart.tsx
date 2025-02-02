@@ -46,14 +46,14 @@ export function ProductCart({
           <div>
             front:{" "}
             <img
-              style={{ width: "180px", height: "180px" }}
+              style={{ width: "180px", height: "280px" }}
               src={currentColorData.images[0]}
             ></img>
           </div>
           <div>
             back:{" "}
             <img
-              style={{ width: "180px", height: "180px" }}
+              style={{ width: "180px", height: "280px" }}
               src={currentColorData.images[1]}
             ></img>
           </div>

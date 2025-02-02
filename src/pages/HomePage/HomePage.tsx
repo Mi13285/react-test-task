@@ -42,7 +42,7 @@ export function HomePage() {
           <div>{product.description}</div>
           <div>{product.price}</div>
           <img
-            style={{ width: "180px", height: "280px" }}
+            style={{ width: "180px", height: "350px" }}
             src={product.image}
           />
           <Link to={`/product/${product.id}`}>
