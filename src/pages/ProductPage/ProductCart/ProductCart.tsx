@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { Product, Size } from "../../../services/api";
+import styles from "./ProductCart.module.css";
 type ProductCartProps = {
   product: Product;
   sizes: Size[];
@@ -50,7 +51,7 @@ export function ProductCart({
               src={currentColorData.images[0]}
             ></img>
           </div>
-          <div>
+          <div className="title-information">
             back:{" "}
             <img
               style={{ width: "180px", height: "280px" }}
